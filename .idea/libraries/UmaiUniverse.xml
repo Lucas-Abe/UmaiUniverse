@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="UmaiUniverse">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/UmaiUniverse.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
