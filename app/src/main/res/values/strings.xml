@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UmaiUniverse</string>
+    <color name="background">#6fbcc7</color>
 </resources>
