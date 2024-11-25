@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">UmaiUniverse</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
     <color name="background">#6fbcc7</color>
 </resources>
