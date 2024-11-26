@@ -35,5 +35,4 @@ public class CardapioFragment extends Fragment {
         binding = null;
     }
 
-
 }
