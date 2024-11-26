@@ -24,7 +24,7 @@ public class ReviewFragment extends Fragment{
         binding = FragmentReviewBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textreview;
+        final TextView textView = binding.textReview;
         reviewViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

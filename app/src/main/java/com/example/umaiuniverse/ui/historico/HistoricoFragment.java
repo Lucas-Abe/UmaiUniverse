@@ -24,7 +24,7 @@ public class HistoricoFragment extends Fragment {
         binding = FragmentHistoricoBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.texthistorico;
+        final TextView textView = binding.textHistorico;
         historicoViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

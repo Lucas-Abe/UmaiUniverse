@@ -24,7 +24,7 @@ public class UsuarioFragment extends Fragment {
         binding = FragmentUsuarioBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textusuario;
+        final TextView textView = binding.textUsuario;
         usuarioViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

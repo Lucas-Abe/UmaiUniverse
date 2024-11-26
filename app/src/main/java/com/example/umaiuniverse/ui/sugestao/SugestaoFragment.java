@@ -24,7 +24,7 @@ public class SugestaoFragment extends Fragment {
         binding = FragmentSugestaoBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textsugestao;
+        final TextView textView = binding.textSugestao;
         sugestaoViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

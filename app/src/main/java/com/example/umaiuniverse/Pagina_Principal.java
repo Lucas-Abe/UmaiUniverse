@@ -39,7 +39,8 @@ private ActivityPaginaPrincipalBinding binding;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_cardapio, R.id.nav_historico,
+                R.id.nav_usuario, R.id.nav_review, R.id.nav_sugestao)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_pagina_principal);
