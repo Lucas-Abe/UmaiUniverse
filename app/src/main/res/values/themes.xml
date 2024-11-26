@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.UmaiUniverse" parent="Base.Theme.UmaiUniverse" />
+    <style name="Theme.UmaiUniverse.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.UmaiUniverse.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.UmaiUniverse.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

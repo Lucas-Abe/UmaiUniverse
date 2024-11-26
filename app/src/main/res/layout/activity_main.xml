@@ -49,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="358dp"
         android:layout_marginBottom="18dp"
+        android:onClick="abrirPrincipal"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toStartOf="@+id/imageView"

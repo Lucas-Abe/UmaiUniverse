@@ -13,6 +13,8 @@ import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+//Icons by Icons8
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -24,17 +26,13 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 
-            Button buttonNavigate = findViewById(R.id.button3);
-            buttonNavigate.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this, pagina_principal.class);
-                    startActivity(intent);
-                }
-            });
-
-
             return insets;
         });
     }
+
+    public void abrirPrincipal(View view) {
+        Intent intent = new Intent(this, Pagina_Principal.class);
+        startActivity(intent);
+    }
+
 }
