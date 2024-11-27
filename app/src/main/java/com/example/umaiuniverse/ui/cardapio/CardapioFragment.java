@@ -24,8 +24,6 @@ public class CardapioFragment extends Fragment {
         binding = FragmentCardapioBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textCardapio;
-        cardapioViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

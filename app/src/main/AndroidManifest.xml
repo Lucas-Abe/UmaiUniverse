@@ -24,7 +24,7 @@
             android:name=".user_menu"
             android:exported="false" />
         <activity
-            android:name=".pesquisa"
+            android:name=".Pesquisa"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

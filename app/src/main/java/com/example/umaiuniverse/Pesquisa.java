@@ -8,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class pesquisa extends AppCompatActivity {
+public class Pesquisa extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
