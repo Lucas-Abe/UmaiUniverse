@@ -8,7 +8,16 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+import android.content.Intent;
+
+
 public class Login extends AppCompatActivity {
+
+    private EditText editTextEmailLogin;
+    private EditText editTextSenhaLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +27,34 @@ public class Login extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+
+            editTextEmailLogin = findViewById(R.id.editTextEmailLogin);
+            editTextSenhaLogin = findViewById(R.id.editTextSenhaLogin);
+
+
             return insets;
         });
     }
+
+    public void fazerLogin(View view) {
+
+        String email = editTextEmailLogin.getText().toString();
+        String senha = editTextSenhaLogin.getText().toString();
+
+        AppDatabase db = AppDatabase.getInstance(this);
+        ContaDao dao = db.contaDao();
+
+        Conta conta = dao.buscarEmail(email);
+
+        if (conta != null && conta.getSenha().equals(senha)) {
+            Toast.makeText(this, "Login realizado com sucesso!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, Pagina_Principal.class);
+            startActivity(intent);
+            finish();
+        } else {
+            Toast.makeText(this, "Email ou senha incorretos!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
 }
