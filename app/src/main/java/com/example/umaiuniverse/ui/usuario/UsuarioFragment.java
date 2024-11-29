@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.umaiuniverse.ConfigConta;
 import com.example.umaiuniverse.MainActivity;
 import com.example.umaiuniverse.databinding.FragmentUsuarioBinding;
 
@@ -24,6 +25,11 @@ public class UsuarioFragment extends Fragment {
         requireActivity().finish();
     }
 
+    public void abrirConfigConta(View view) {
+        Intent intent = new Intent(requireContext(), ConfigConta.class);
+        startActivity(intent);
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         UsuarioViewModel usuarioViewModel =
@@ -33,6 +39,7 @@ public class UsuarioFragment extends Fragment {
         View root = binding.getRoot();
 
         binding.buttonLogout.setOnClickListener(v -> logOut(v));
+        binding.buttonConfigConta.setOnClickListener(v -> abrirConfigConta(v));
 
         return root;
     }

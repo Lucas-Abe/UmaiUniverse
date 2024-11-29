@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.content.SharedPreferences;
 
 import android.view.View;
 import android.widget.EditText;
@@ -47,6 +48,12 @@ public class Login extends AppCompatActivity {
         Conta conta = dao.buscarEmail(email);
 
         if (conta != null && conta.getSenha().equals(senha)) {
+
+            SharedPreferences sharedPreferences = getSharedPreferences("user_prefs", MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString("user_email", email);
+            editor.apply();
+
             Toast.makeText(this, "Login realizado com sucesso!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, Pagina_Principal.class);
             startActivity(intent);
@@ -55,6 +62,5 @@ public class Login extends AppCompatActivity {
             Toast.makeText(this, "Email ou senha incorretos!", Toast.LENGTH_SHORT).show();
         }
     }
-
 
 }

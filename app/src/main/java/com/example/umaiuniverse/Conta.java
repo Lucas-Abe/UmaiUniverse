@@ -1,5 +1,6 @@
 package com.example.umaiuniverse;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -8,11 +9,12 @@ import java.util.Date;
 @Entity
 public class Conta {
 
-    @PrimaryKey(autoGenerate = true)
-    private int id;
+    @PrimaryKey()
+    @NonNull()
+    private String email;
     private String nome;
     private String senha;
-    private String email;
+
     private Date dataNascimento;
 
     public Conta(){ }
@@ -25,13 +27,6 @@ public class Conta {
         this.nome = nome;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getSenha() {
         return senha;

@@ -17,7 +17,6 @@
 
     public class Cadastro extends AppCompatActivity {
 
-
         private EditText editTextNome;
         private EditText editTextEmail;
         private EditText editTextDataNasc;
@@ -36,6 +35,7 @@
             editTextEmail = findViewById(R.id.editTextEmail);
             editTextDataNasc = findViewById(R.id.editTextDataNasc);
             editTextSenha = findViewById(R.id.editTextSenha);
+
         }
 
         public void cadastrar(View view) {
@@ -56,5 +56,6 @@
             dao.insert(c);
             abrirPrincipal();
         }
+
 
     }
