@@ -40,7 +40,7 @@ private ActivityPaginaPrincipalBinding binding;
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_cardapio, R.id.nav_historico,
-                R.id.nav_usuario, R.id.nav_review, R.id.nav_sugestao)
+                R.id.nav_usuario)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_pagina_principal);
