@@ -1,5 +1,6 @@
 package com.example.umaiuniverse.ui.usuario;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,11 +11,18 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.umaiuniverse.MainActivity;
 import com.example.umaiuniverse.databinding.FragmentUsuarioBinding;
 
 public class UsuarioFragment extends Fragment {
 
     private FragmentUsuarioBinding binding;
+
+    public void logOut(View view){
+        Intent intent = new Intent(requireContext(), MainActivity.class);
+        startActivity(intent);
+        requireActivity().finish();
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -24,8 +32,8 @@ public class UsuarioFragment extends Fragment {
         binding = FragmentUsuarioBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textUsuario;
-        usuarioViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        binding.buttonLogout.setOnClickListener(v -> logOut(v));
+
         return root;
     }
 
