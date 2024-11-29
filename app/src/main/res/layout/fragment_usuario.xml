@@ -54,6 +54,7 @@
                 android:layout_width="300dp"
                 android:layout_height="84dp"
                 android:layout_marginBottom="10dp"
+                android:onClick="abrirEndereco"
                 android:text="Endereços de entrega" />
         </LinearLayout>
 
@@ -68,6 +69,7 @@
                 android:layout_width="300dp"
                 android:layout_height="84dp"
                 android:layout_marginBottom="10dp"
+                android:onClick="abrirmeioPag"
                 android:text="Métodos de pagamento" />
         </LinearLayout>
 
@@ -82,6 +84,7 @@
                 android:layout_width="300dp"
                 android:layout_height="84dp"
                 android:layout_marginBottom="10dp"
+                android:onClick="abrirContato"
                 android:text="Fale conosco" />
         </LinearLayout>
 

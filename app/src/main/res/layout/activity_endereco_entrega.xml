@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnderecoEntrega">
+
+    <LinearLayout
+        android:layout_width="527dp"
+        android:layout_height="524dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="4dp">
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="130dp"
+                android:background="@drawable/bg_umai_dark"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textEndereco1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Minha casa"
+                        android:textColor="#FFF"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textDesc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35sp"
+                        android:gravity="center"
+                        android:text="Avenida Comercial nº 532 próximo ao Shopping Technes"
+                        android:textColor="#FFF"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="130dp"
+                android:background="@drawable/bg_umai_dark"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textEndereco2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Endereço de trabalho"
+                        android:textColor="#FFF"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textDesc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35sp"
+                        android:gravity="center"
+                        android:text="R. Profª Gipse Montenegro nº 2739"
+                        android:textColor="#FFF"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="130dp"
+                android:background="@drawable/bg_umai_dark"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textEndereco3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Casa de praia"
+                        android:textColor="#FFF"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textDesc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="35sp"
+                        android:gravity="center"
+                        android:text="Rua Pernambuco 550 próximo a Praia Finend"
+                        android:textColor="#FFF"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

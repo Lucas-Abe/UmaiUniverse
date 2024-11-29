@@ -12,7 +12,11 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.umaiuniverse.ConfigConta;
+import com.example.umaiuniverse.Conta;
+import com.example.umaiuniverse.Contato;
+import com.example.umaiuniverse.EnderecoEntrega;
 import com.example.umaiuniverse.MainActivity;
+import com.example.umaiuniverse.MetodoPagamento;
 import com.example.umaiuniverse.databinding.FragmentUsuarioBinding;
 
 public class UsuarioFragment extends Fragment {
@@ -30,6 +34,21 @@ public class UsuarioFragment extends Fragment {
         startActivity(intent);
     }
 
+    public void abrirEndereco(View view) {
+        Intent intent = new Intent(requireContext(), EnderecoEntrega.class);
+        startActivity(intent);
+    }
+
+    public void abrirmeioPag(View view) {
+        Intent intent = new Intent(requireContext(), MetodoPagamento.class);
+        startActivity(intent);
+    }
+
+    public void abrirContato(View view) {
+        Intent intent = new Intent(requireContext(), Contato.class);
+        startActivity(intent);
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         UsuarioViewModel usuarioViewModel =
@@ -40,6 +59,9 @@ public class UsuarioFragment extends Fragment {
 
         binding.buttonLogout.setOnClickListener(v -> logOut(v));
         binding.buttonConfigConta.setOnClickListener(v -> abrirConfigConta(v));
+        binding.buttonPagamento.setOnClickListener(v -> abrirmeioPag(v));
+        binding.buttonEndereco.setOnClickListener(v -> abrirEndereco(v));
+        binding.buttonContato.setOnClickListener(v -> abrirContato(v));
 
         return root;
     }

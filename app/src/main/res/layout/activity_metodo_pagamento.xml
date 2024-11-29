@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MetodoPagamento">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="407dp"
+        android:layout_height="440dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="130dp"
+                android:background="@drawable/bg_umai_dark"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/mastercard_logo" />
+
+                    <TextView
+                        android:id="@+id/textEndereco1"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Cartão de crédito"
+                        android:textColor="#FFF"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textDesc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35sp"
+                        android:gravity="center"
+                        android:text="**** **** **** 9341"
+                        android:textColor="#FFF"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="336dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="336dp"
+                android:layout_height="130dp"
+                android:background="@drawable/bg_umai_dark"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/mastercard_logo" />
+
+                    <TextView
+                        android:id="@+id/textEndereco2"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Cartão de débito"
+                        android:textColor="#FFF"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:background="@drawable/bg_umai_darker"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textDesc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35sp"
+                        android:gravity="center"
+                        android:text="**** **** **** 8790"
+                        android:textColor="#FFF"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

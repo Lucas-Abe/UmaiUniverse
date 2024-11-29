@@ -24,7 +24,6 @@ public class ConfigConta extends AppCompatActivity {
     private EditText editTextDataNascConfig;
     private EditText editTextSenhaConfig;
 
-    private int teste;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
