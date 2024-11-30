@@ -29,7 +29,8 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="E-mail" />
+                android:text="E-mail"
+                android:textColor="#FFF"/>
 
             <EditText
                 android:id="@+id/editTextEmailLogin"
@@ -38,7 +39,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Digite seu email"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColor="#FFF"/>
 
         </LinearLayout>
 
@@ -53,7 +55,8 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Senha" />
+                android:text="Senha"
+                android:textColor="#FFF"/>
 
             <EditText
                 android:id="@+id/editTextSenhaLogin"
@@ -62,7 +65,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Digite sua senha"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="#FFF"/>
 
         </LinearLayout>
 

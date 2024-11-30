@@ -36,20 +36,13 @@
             android:label="@string/title_activity_pagina_principal"
             android:theme="@style/Theme.UmaiUniverse.NoActionBar" />
         <activity
-            android:name=".historico"
-            android:exported="false" />
-        <activity
             android:name=".user_menu"
-            android:exported="false" />
-        <activity
-            android:name=".Pesquisa"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

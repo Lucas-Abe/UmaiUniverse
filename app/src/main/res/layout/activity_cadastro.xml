@@ -31,7 +31,8 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Nome" />
+                android:text="Nome"
+                android:textColor="#FFF" />
 
             <EditText
                 android:id="@+id/editTextNome"
@@ -40,7 +41,33 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Coloque seu nome"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="E-mail"
+                android:textColor="#FFF" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Digite seu email"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFF" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -54,7 +81,8 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Data de nascimento" />
+                android:text="Data de nascimento"
+                android:textColor="#FFF"/>
 
             <EditText
                 android:id="@+id/editTextDataNasc"
@@ -63,7 +91,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Data de nascimento"
-                android:inputType="text" />
+                android:inputType="text"
+                android:textColor="#FFF"/>
         </LinearLayout>
 
         <LinearLayout
@@ -77,7 +106,8 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Senha" />
+                android:text="Senha"
+                android:textColor="#FFF"/>
 
             <EditText
                 android:id="@+id/editTextSenha"
@@ -86,30 +116,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Digite sua senha"
-                android:inputType="textPassword" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:layout_weight="1">
-
-            <TextView
-                android:id="@+id/textViewEmail"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="E-mail" />
-
-            <EditText
-                android:id="@+id/editTextEmail"
-                android:layout_width="170dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="Digite seu email"
-                android:inputType="textEmailAddress" />
+                android:inputType="textPassword"
+                android:textColor="#FFF"/>
 
         </LinearLayout>
 
